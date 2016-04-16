@@ -17,11 +17,15 @@ class Data:
     def __init__(self):
         return
 
-
     def get_data(self):
+        # get stock basics
         stock_basics=ts.get_stock_basics()
+        # get report data
+
+    def getReportData(self,year,month):
+
         return
 if __name__=='__main__':
     print 'stock_basics:'
-    ts.get_stock_basics().to_excel(r'C:\file\sc.xlsx')
+    print ts.get_stock_basics()
 #read data by
